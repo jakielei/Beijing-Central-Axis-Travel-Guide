@@ -342,6 +342,12 @@ const pages = Array.from(document.querySelectorAll('.page'));
       }
     }
 
+    function clearCustomQuestionHint(input) {
+      if (input.value === '我想问点别的') {
+        input.value = '';
+      }
+    }
+
     function answerCustomQuestion() {
       const input = document.getElementById('customQuestionInput');
       const title = document.getElementById('modeTitle');

@@ -198,7 +198,8 @@
             <button class="btn ghost" onclick="answerQuestion('axis')">它和中轴线有什么关系？</button>
           </div>
           <div class="custom-question-box">
-            <input id="customQuestionInput" type="text" value="我想问点别的" aria-label="自定义提问" />
+            <input id="customQuestionInput" type="text" value="我想问点别的" aria-label="自定义提问"
+              onfocus="clearCustomQuestionHint(this)" />
             <button class="btn secondary" onclick="answerCustomQuestion()">提问</button>
           </div>
         </section>
